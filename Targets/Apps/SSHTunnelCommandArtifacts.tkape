@@ -32,7 +32,7 @@ Targets:
     Name: User PowerShell scripts
     Category: Scripts
     Path: C:\Users\%user%
-    FileMask: *.ps1
+    FileMask: "*.ps1"
     Recursive: true
     Comment: User-created PowerShell scripts may contain pivoting commands
 
