@@ -7,7 +7,10 @@ BinaryUrl: https://github.com/EricZimmerman/KapeFiles
 ExportFormat: csv
 
 Processors:
-    -
-        Executable: powershell.exe
-        CommandLine: -ExecutionPolicy Bypass -NoProfile -File .\Modules\bin\SSHCommandHunt.ps1 -Source %sourceDirectory% -Out %destinationDirectory%\SSHCommandHits.csv
-        ExportFormat: csv
+  -
+    Executable: powershell.exe
+    CommandLine: -ExecutionPolicy Bypass -NoProfile -File .\Modules\bin\SSHCommandHunt.ps1 -Source %sourceDirectory% -Out %destinationDirectory%\SSHCommandHits.csv
+ExportFormat: csv
+
+# Documentation
+# Searches artifact text for command patterns associated with SSH tunneling and common pivoting tools such as ssh -L/-R/-D, plink, netsh portproxy, chisel, ngrok, cloudflared, ligolo, frp, and socat.
