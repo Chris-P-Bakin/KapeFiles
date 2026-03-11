@@ -83,3 +83,6 @@ Targets:
     FileMask: "*"
     Recursive: true
     Comment: SSH directory may contain keys, configs, and other connection artifacts
+
+# Documentation
+# N/A
